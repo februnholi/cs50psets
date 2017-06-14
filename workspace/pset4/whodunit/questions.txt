@@ -1,0 +1,12 @@
+1.  The <stdint.h> is a header that declares sets of integer types having specified widths, for example: uint24_t denotes an unsingned integer type with 24-bit width.
+2.  It specifies how data / integers should be used in that program.
+3.  1, 4, 4, 2
+4.  It must be "BM" or 0x4d42 in hexadecimal
+5.  bfsize is the size, in bytes, of the bmp file. bisize is the number of bytes required by the structure (BitmapInfoHeader)
+6.  Then the image is top-down, and it starts in the upper left corner
+7.  biBitCount determines the number of bits that define each pixel and the maximum number of colors in the bitmap
+8.  If you are opening a file using r then that file MUST exist, otherwise fopen will return NULL. The program is checking if the file exists, otherwise will display an error message and stop running it.
+9.  Because it is reading just 1 block each time (1 RGB at the time)
+10. zero = (4 - ((3 * 24) % 4)) % 4
+11. It skips paddings and looks for the next pixel instead
+12. To instead set "inptr" to a location defined in constant SEEK_CUR
